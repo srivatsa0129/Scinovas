@@ -1,0 +1,122 @@
+/* Container for the login form */
+.login-container {
+  width: 100%;
+  width: 400px;
+  padding: 30px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect for the container */
+.login-container:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Header styling for the login form */
+.login-container h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #017d92;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Input group spacing */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #017d92;
+  box-shadow: 0 0 8px rgba(1, 125, 146, 0.3);
+  outline: none;
+}
+
+/* Button container styling */
+.button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Button styling */
+button {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.login-button {
+  background-color: #017d92;
+  color: white;
+}
+
+button.login-button:hover {
+  background-color: #015c6c;
+  transform: scale(1.03);
+}
+
+button.clear-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+button.clear-button:hover {
+  background-color: #b84131;
+  transform: scale(1.03);
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .login-container {
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .login-container h1 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+  }
+
+  .form-group input {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+}

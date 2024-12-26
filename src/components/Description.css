@@ -1,0 +1,49 @@
+.app-description {
+    padding: 20px;
+    /* background-color: #f0fcff; */
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    text-align: justify;
+  }
+  
+  .app-description h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #017d92;
+  }
+  
+  .app-description ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .app-description li {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .app-description {
+        width: 90%; /* Take up most of the screen width */
+        padding: 20px 15px; /* Reduce padding for smaller screens */
+        margin: 10px auto; /* Maintain spacing on all sides */
+    }
+  
+    .app-description h2 {
+        font-size: 1.5em; /* Adjust heading size for smaller screens */
+        margin-bottom: 15px; /* Reduce spacing below the heading */
+    }
+  
+    .app-description p {
+        font-size: 0.95rem; /* Slightly smaller text for better fit */
+        margin-bottom: 12px;
+    }
+  
+    .app-description ul {
+        padding-left: 15px; /* Adjust padding for a more compact layout */
+    }
+  
+    .app-description li {
+        font-size: 0.9rem; /* Slightly smaller text for list items */
+        margin-bottom: 8px;
+    }
+  }

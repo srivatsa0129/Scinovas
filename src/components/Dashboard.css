@@ -1,0 +1,79 @@
+/* General Styling */
+.dashboard {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Header Styling */
+  .dashboard-header {
+    font-size: 2em;
+    font-weight: 600;
+    color: #263859;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 4px solid #ffd700;
+    padding-bottom: 10px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  /* Navigation Links Section */
+  .dashboard-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .dashboard-link {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #263859;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-link:hover {
+    background-color: #1c2541;
+    transform: translateY(-3px);
+  }
+  
+  .dashboard-link:active {
+    transform: translateY(1px);
+  }
+  
+  /* Content Section */
+  .dashboard-content {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .dashboard-content h2 {
+    color: #263859;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-content p {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
