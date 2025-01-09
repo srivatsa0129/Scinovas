@@ -1,0 +1,368 @@
+/* General Layout */
+.admin-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+  
+  }
+  
+  .admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 25px;
+    background: #017d92;
+    color: white;
+    margin-bottom: 25px;
+  }
+
+  /* .admin-header button {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: left;
+    width: 20px;
+  } */
+  
+  .nav-button-dashboard, .nav-button-logout {
+    padding: 12px 24px;
+    background-color: #017d92;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .logout-button {
+    background-color: #ff4d4d;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .nav-button:hover, .logout-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .logout-button:hover {
+    background-color: #e53935;
+  }
+  
+  /* Content Area */
+  .admin-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+  }
+  
+  /* Add User Form Styling */
+  .add-user-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-right: 30px;
+  }
+  
+  .add-user-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #1c2541;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+  }
+  
+  .add-button {
+    background-color: #017d92;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #1c2541;
+    transform: translateY(-3px);
+  }
+  
+  .add-user-form input[type="file"] {
+    margin-top: 10px;
+  }
+  
+  /* User Table Styling */
+  .user-table {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 2;
+  }
+  
+  .user-table h2 {
+    font-size: 1.5rem;
+    color: #017d92;
+    margin-bottom: 20px;
+  }
+  
+  .user-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-table th,
+  .user-table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .user-table th {
+    background-color: #017d92;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .user-table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .user-table td {
+    font-size: 0.95rem;
+  }
+  
+  /* Modal Styling for Logout Confirmation */
+  .logout-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .modal-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .modal-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #017d92;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .modal-button:hover {
+    background-color: #263859;
+  }
+  
+  .modal-button:last-child {
+    background-color: #ff4d4d;
+  }
+  
+  .modal-button:last-child:hover {
+    background-color: #e53935;
+  }
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* General Layout Adjustments */
+    .admin-page {
+      padding: 15px;
+    }
+  
+    .admin-header {
+      flex-direction: column;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .nav-button, .logout-button {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 1rem;
+    }
+  
+    /* Content Area */
+    .admin-content {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .add-user-form, .user-table {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    /* Add User Form */
+    .add-user-form {
+      padding: 15px;
+    }
+  
+    .add-user-form h2 {
+      font-size: 1.25rem;
+      margin-bottom: 15px;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      font-size: 0.9rem;
+    }
+  
+    .add-button {
+      width: 100%;
+      padding: 12px 0;
+      background-color: #017d92;
+    }
+  
+    /* User Table */
+    .user-table {
+      padding: 15px;
+    }
+  
+    .user-table h2 {
+      font-size: 1.25rem;
+    }
+  
+    .user-table th,
+    .user-table td {
+      padding: 10px;
+    }
+  
+    .user-table td {
+      font-size: 0.9rem;
+    }
+  
+    /* Add scrolling to the table on mobile */
+    .user-table table {
+      width: 100%;
+      border-collapse: collapse;
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    }
+  
+    /* Modal */
+    .modal-content {
+      width: 90%;
+    }
+  
+    .modal-button {
+      width: 100%;
+      padding: 12px 0;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Mobile Styles for Very Small Screens */
+    .admin-header {
+      padding: 8px;
+    }
+  
+    .nav-button, .logout-button {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    .add-user-form h2 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      font-size: 0.85rem;
+    }
+  
+    .add-button {
+      padding: 12px 0;
+      font-size: 1rem;
+      color: #017d92;
+    }
+  
+    .user-table th,
+    .user-table td {
+      font-size: 0.85rem;
+      padding: 8px;
+    }
+  
+    .logout-modal .modal-content {
+      width: 85%;
+      padding: 15px;
+    }
+  
+    .modal-button {
+      font-size: 0.9rem;
+      padding: 12px 0;
+    }
+  }
+    /* Filter Box Styling */
+/* Filter Box Styling */
+.filter-box {
+    margin-bottom: 15px;
+  }
+  
+  .filter-box input {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
